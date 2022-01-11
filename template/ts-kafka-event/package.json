@@ -28,7 +28,8 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "graphql-kafka-subscriptions": "0.4.0",
-    "bunyan": "1.8.15"
+    "bunyan": "1.8.15",
+    "fastify": "^3.25.3"
   },
   "devDependencies": {
     "@types/jest": "27.0.1",
