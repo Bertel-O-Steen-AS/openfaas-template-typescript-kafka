@@ -48,16 +48,14 @@ COPY --chown=app:app function/*.json function/.npmrc* ./
 RUN npm i || :
 
 # Delete build packages required by node-rdkafka
-RUN apk delete \
-    bash \
+RUN apk del \
     g++ \
     make \
     py-pip \
-    lz4-dev \
     musl-dev \
-    cyrus-sasl-dev \
     openssl-dev \
-    && apk -v cache clean
+    bash \
+    curl
 
 # COPY function files and folders
 COPY --chown=app:app function/ ./
