@@ -1,0 +1,38 @@
+{
+  "name": "ts-kafka-event",
+  "version": "1.0.0",
+  "config": {
+    "name": "apollofunc"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:watch": "tsc -w",
+    "start": " NODE_ENV=develope ts-node index.ts",
+    "build-fn": "copyfiles -f ./package.json function",
+    "build-ts": "tsc",
+    "build": "npm run build-fn && faas-cli build -f $npm_package_config_name.yml",
+    "deploy": "faas-cli deploy -f $npm_package_config_name.yml",
+    "up": "npm run build && npm run deploy"
+  },
+  "keywords": [
+    "Openfaas",
+    "Azure Event Hubs",
+    "Kafka",
+    "Serverless",
+    "FaaS"
+  ],
+  "author": "Nils Perret",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "27.0.1",
+    "@types/node": "^14.14.41",
+    "copyfiles": "^2.1.0",
+    "ts-node": "^8.0.2",
+    "typescript": "4.5.2"
+  }
+}

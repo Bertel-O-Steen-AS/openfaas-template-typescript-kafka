@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "preserveConstEnums": true,
+    "strictNullChecks": false,
+    "module": "commonjs",
+    "sourceMap": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2016",
+    "lib": ["es2019", "es2017", "es7", "es6", "dom", "esnext.asynciterable", "esnext"],
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "outDir": ".",
+    "removeComments": true,
+    "noEmitOnError": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "types": ["node", "jest"]
+  },
+  "exclude": ["node_modules", "test"]
+}

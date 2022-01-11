@@ -1,0 +1,2 @@
+language: ts-kafka-event
+fprocess: node index.js
