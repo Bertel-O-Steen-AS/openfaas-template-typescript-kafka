@@ -8,3 +8,7 @@ export interface IEnvironmentVariables {
   KAFKA_PORT: string;
   LOG_LEVEL: string;
 }
+
+export interface IEventPayload {
+  // ToDo: Add expected fields here
+}
