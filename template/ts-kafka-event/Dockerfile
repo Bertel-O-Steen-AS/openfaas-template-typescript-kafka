@@ -66,6 +66,8 @@ RUN npm test
 # Set correct permissions to use non root user
 WORKDIR /home/app/
 
+RUN chown app:app function
+
 # Transpile typescript
 RUN npm run build-ts
 
