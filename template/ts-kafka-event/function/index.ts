@@ -40,11 +40,11 @@ export const startKafkaConsumer = async (variables: IEnvironmentVariables) => {
 
 const getKafkaConsumerByTopic = (variables: IEnvironmentVariables): KafkaConsumer => {
   const topic = variables?.KAFKA_TOPIC_CONSUME;
-  const clientId = variables?.EVENT_HUB_CLIENT_ID || `client-${Math.random()}`;
-  const host = variables?.EVENT_HUB_NAMESPACE_URL;
+  const clientId = variables?.CLIENT_ID || `client-${Math.random()}`;
+  const host = variables?.KAFKA_HOST_URL;
   const port = variables?.KAFKA_PORT;
   const consumerGroup = variables?.CONSUMER_GROUP;
-  const connectionString = variables?.EVENT_HUB_CONNECTION_STRING;
+  const connectionString = variables?.CONNECTION_STRING;
   console.log(`Listening to topic name (i.e. event hub name) '${topic}'`);
 
   if (consumers[topic]) return consumers[topic];

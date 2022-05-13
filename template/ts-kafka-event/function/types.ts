@@ -1,8 +1,8 @@
 export interface IEnvironmentVariables {
   CONSUMER_GROUP: string;
-  EVENT_HUB_CLIENT_ID: string;
-  EVENT_HUB_CONNECTION_STRING: string;
-  EVENT_HUB_NAMESPACE_URL: string;
+  CLIENT_ID: string;
+  CONNECTION_STRING: string;
+  KAFKA_HOST_URL: string;
   KAFKA_TOPIC_CONSUME: string;
   KAFKA_TOPIC_PRODUCE: string;
   KAFKA_PORT: string;
