@@ -11,7 +11,7 @@
     "jest:update:snapshots": "tsc && jest --update-snapshots"
   },
   "dependencies": {
-    "kafkajs": "^1.16.0"
+    "kafkajs": "2.1.0"
   },
   "devDependencies": {
     "@types/jest": "27.0.1",
